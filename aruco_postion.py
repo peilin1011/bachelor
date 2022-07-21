@@ -4,6 +4,11 @@ import cv2
 from cv2 import aruco
 import math
 
+camera_matrix = np.array([[641.616, 0., 623.077], [0., 3639.931, 402.488],
+                          [0., 0., 1.]])
+dist_matrix = np.array(
+    ([[-0.0538169, 0.0606288, 7.8376e-05, -0.000260899, -0.018944]]))
+
 cap = cv2.VideoCapture(0)
 # cap.set(cv2.CAP_PROP_FOURCC, cv2.VideoWriter_fourcc('M', 'J', 'P', 'G'))
 # cap.set(cv2.CAP_PROP_FRAME_WIDTH, 1920)
